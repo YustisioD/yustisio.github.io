@@ -1,0 +1,293 @@
+/* General reset */
+/* Responsive design for smartphones */
+@media screen and (max-width: 768px) {
+    /* About Me and Skills: Stack vertically */
+    .about-skills {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .about, .skills {
+        width: 90%;
+        margin: 0;
+        text-align: justify;
+    }
+
+    /* Make Friends on Social Media: Smaller Icons */
+        /* Ukuran ikon sosial media yang lebih kecil */
+        .social-media-icons img {
+            width: 30px; /* Sesuaikan ukuran ikon agar lebih kecil */
+            height: 30px;
+            margin: 5px; /* Kurangi margin agar lebih rapat */
+        }
+
+        /* Pastikan ikon tersusun dalam satu baris */
+        .social-media-icons {
+            display: flex;
+            justify-content: center; /* Menengahkan ikon */
+            gap: 10px; /* Jarak antar ikon */
+            flex-wrap: nowrap; /* Mencegah ikon turun ke baris berikutnya */
+        }
+
+
+    /* Contact Me: Adjust layout for better readability */
+    .contact {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact input, .contact textarea {
+        width: 90%;
+        font-size: 13px;
+    }
+
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    overflow-x: hidden; /* Hide horizontal scroll */
+    display: flex;
+    flex-direction: column; /* Arrange sections in a column */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Header section */
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 150px; /* Give space for fixed header */
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #222;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Profile section */
+.profile {
+    text-align: center;
+    background-image: url('milkyway.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile h1 {
+    color: #4da3ff;
+}
+
+/* About and Skills section */
+.about-skills {
+    background-image: url('Hagi.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.about, .skills {
+    flex: 1;
+    text-align: justify;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.skills p {
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Experiences section */
+.experiences {
+    background-image: url('medali.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.experiences h2 {
+    text-align: center; /* Center the subheading */
+    width: 100%; /* Make sure the text occupies the full width of its container */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.experience-card {
+    background-color: #0077b6;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #4da3ff;
+    margin-bottom: 20px;
+}
+
+.experience-card h3 {
+    color: #4da3ff;
+    margin-top: 10px;
+}
+.experience-card a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+.experience-card:hover {
+    background-color: #005f79;
+}       
+/* Social media section */
+.social-media-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Me section */
+.contact {
+    background-color: #0f4b5c;
+    padding: 40px;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #0077b6;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #005f79;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 100px auto; /* Menengahkan form dan memberi jarak dari atas */
+    color: black;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Footer section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* Full-page scrolling container */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto; /* Enable vertical scrolling for the whole page */
+    min-height: 100vh; /* Ensure the full height is used */
+}
+/* Animasi ketika muncul */
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Ketika section terlihat di viewport */
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
