@@ -173,6 +173,9 @@
             border-radius: 10px;
             color: white;
         }
+        .experiences {
+            border: 2px solid white; /* Mengubah border menjadi putih */
+        }
 
         .experiences h2 {
             text-align: center; /* Center the subheading */
@@ -197,7 +200,8 @@
             justify-content: center;
             color: white;
             font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Agar teks tetap terlihat jelas */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);/* Agar teks tetap terlihat jelas */
+            transition: background-image 0.3s ease-in-out, transform 0.3s;
         }
 
         .experience-card h3 {
@@ -213,7 +217,6 @@
         .experience-card:hover {
             color: transparent;
             background-size: cover;
-            transition: 0.3s ease-in-out;
             transform: scale(1.05);
         }       
         /* Social media section */
@@ -290,15 +293,15 @@
             transform: scale(1.1);
         }
 
-        .education:hover { background-image: url('educati.jpg'); }
-        .geofields:hover { background-image: url('field.jpg'); }
-        .organizations:hover { background-image: url('organiza.jpg'); }
-        .community:hover { background-image: url('involvement.jpg'); }
-        .competition:hover { background-image: url('competiti.jpg'); }
-        .publications:hover { background-image: url('public.jpg'); }
-        .scholarship:hover { background-image: url('schol.jpg'); }
-        .courses:hover { background-image: url('certif.jpg'); }
-        .hobbies:hover { background-image: url('hobby.jpg'); }
+        .experience-card.education:hover { background-image: url('educati.jpg') !important; }
+        .experience-card.geofields:hover { background-image: url('field.jpg') !important; }
+        .experience-card.organizations:hover { background-image: url('organiza.jpg') !important; }
+        .experience-card.community:hover { background-image: url('involvement.jpg') !important; }
+        .experience-card.competition:hover { background-image: url('competiti.jpg') !important; }
+        .experience-card.publications:hover { background-image: url('public.jpg') !important; }
+        .experience-card.scholarship:hover { background-image: url('schol.jpg') !important; }
+        .experience-card.courses:hover { background-image: url('certif.jpg') !important; }
+        .experience-card.hobbies:hover { background-image: url('hobby.jpg') !important; }
 
         /* Footer section */
         footer {
@@ -376,15 +379,15 @@
 <!-- Experiences Section -->
         <section class="section experiences">
             <h2>Experiences</h2>
-            <div class="experience-card"><a href="educations.html"><h3>Educations</h3></a></div>
-            <div class="experience-card"><a href="geofields.html"><h3>Geo-Fields</h3></a></div>
-            <div class="experience-card"><a href="organizations.html"><h3>Organizations</h3></a></div>
-            <div class="experience-card"><a href="https://involvements-yustisio.netlify.app/"><h3>Community Involvements</h3></a></div>
-            <div class="experience-card"><a href="competition.html"><h3>Competitions</h3></a></div>
-            <div class="experience-card"><a href="publications.html"><h3>Publications</h3></a></div>
-            <div class="experience-card"><a href="scholarship.html"><h3>Scholarships</h3></a></div>
-            <div class="experience-card"><a href="courses.html"><h3>Courses & Sertifications</h3></a></div>
-            <div class="experience-card"><a href="hobbies.html"><h3>Hobbies</h3></a></div>
+                <div class="experience-card education"><a href="educations.html"><h3>Educations</h3></a></div>
+                <div class="experience-card geofields"><a href="geofields.html"><h3>Geo-Fields</h3></a></div>
+                <div class="experience-card organizations"><a href="organizations.html"><h3>Organizations</h3></a></div>
+                <div class="experience-card community"><a href="https://involvements-yustisio.netlify.app/"><h3>Community Involvements</h3></a></div>
+                <div class="experience-card competition"><a href="competition.html"><h3>Competitions</h3></a></div>
+                <div class="experience-card publications"><a href="publications.html"><h3>Publications</h3></a></div>
+                <div class="experience-card scholarship"><a href="scholarship.html"><h3>Scholarships</h3></a></div>
+                <div class="experience-card courses"><a href="courses.html"><h3>Courses & Certifications</h3></a></div>
+                <div class="experience-card hobbies"><a href="hobbies.html"><h3>Hobbies</h3></a></div>
         </section>
             <!-- Contact Me Section -->
             <section class="section contact">
