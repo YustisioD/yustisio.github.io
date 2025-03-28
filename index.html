@@ -183,6 +183,8 @@
         .experience-card {
             background-size: cover;
             background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.3);
             padding: 20px;
             width: 200px;
             height: 200px; /* Sesuaikan tinggi agar kotaknya terlihat bagus */
@@ -209,7 +211,9 @@
             padding: 20px;
         }
         .experience-card:hover {
-            background-color: #005f79;
+            background-color: #52677D;
+            transition: 0.3s ease-in-out;
+            transform: scale(1.05);
         }       
         /* Social media section */
         .social-media-icons {
